@@ -117,5 +117,6 @@ nav a:nth-child(n + 6) span:before {
 .part:hover{background-color: green;}
 .bold{color:blue;}
 .body{background-color:rgb(220, 135, 24)}
+.check_button{text-decoration:none;color:green;}
 
 
