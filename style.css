@@ -28,7 +28,9 @@ nav a {
   text-align: center;
   text-decoration: none;
 }
-
+.clublink{
+  text-decoration: none;
+}
 nav a span {
   color: #333;
   text-decoration: none;
@@ -41,7 +43,13 @@ nav a span {
 
 nav:hover a span {
   color: #0002;
+  text-decoration: none;
 }
+nav:hover .clublink{
+  text-decoration: none;
+  
+}
+
 
 nav a:hover span {
   color: #000;
