@@ -4,31 +4,31 @@ document.getElementById("submit").addEventListener("click",function(event){
     checkData();
 });
 
-var username = document.getElementById("Board/Club");
-var email = document.getElementById("Timing");
+var board_name = document.getElementById("Board_Club");
+var TIME = document.getElementById("TIME");
 var pass1 = document.getElementById("Date");
 var pass2 = document.getElementById("Event Type");
 
 function checkData(){
-    var usernameValue = username.value.trim();
-    var emailValue = email.value.trim();
+    var board_nameValue = board_name.value.trim();
+    var TIMEValue = TIME.value.trim();
     var pass1Value = pass1.value.trim();
     var pass2Value = pass2.value.trim();
     
     if(usernameValue==""){
-        setError(username,"Board/Club can't be blank");
+        setError(board_name,"Board/Club can't be blank");
     }else{
-        setSuccess(usernameValue);
+        setSuccess(board_nameValue);
     }
 
     if(emailValue==""){
-        setError(emailValue,"Timing can't be blank");
+        setError(TIMEValue,"Timing can't be blank");
     }
-    else if(!isEmail(emailValue)){
-        setError(emailValue,"Timing is not Valid");
+    else if(!isEmail(TIMElValue)){
+        setError(TIMEValue,"Timing is not Valid");
     }
     else{
-        setSuccess(emailValue);
+        setSuccess(TIMEValue);
     }
 
 
@@ -67,8 +67,3 @@ function setSuccess(u){
     parentBox.className="input-field success";
     var fa = parentBox.querySelector(".fa");
     fa.className="fa fa-check-circle";
-}
-
-function isEmail(e){
-    var reg = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return reg.test(e);}

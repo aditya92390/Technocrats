@@ -86,27 +86,27 @@ nav a span:hover:before {
   height: 1000px;
 }
 
-nav a:nth-child(n + 1) span:before {
+nav a:nth-child(1) span:before {
   background: #d88789;
 }
 
-nav a:nth-child(n + 2) span:before {
+nav a:nth-child(2) span:before {
   background: #42a0b1;
 }
 
-nav a:nth-child(n + 3) span:before {
+nav a:nth-child(3) span:before {
   background: rgba(92, 72, 148, 0.841);
 }
 
-nav a:nth-child(n + 4) span:before {
+nav a:nth-child(4) span:before {
   background: #747ecc;
 }
 
-nav a:nth-child(n + 5) span:before {
+nav a:nth-child(5) span:before {
   background: #93967a;
 }
 
-nav a:nth-child(n + 6) span:before {
+nav a:nth-child(6) span:before {
   background: #e5d8a6;
 }
 .text1{text-align: center;margin-top: 40px;margin-bottom: 40px;font-family: 'Heebo', sans-serif;;}
