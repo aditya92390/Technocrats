@@ -52,13 +52,13 @@ function checkData(){
 
 }
 
-
 function setError(u, msg){
   var parentBox =  u.parentElement;
   parentBox.className="input-field error";
 var span =  parentBox.querySelector("span");
 var fa = parentBox.querySelector(".fa");
 span.innerText=msg;
+    
 fa.className="fa fa-exclamation-circle";
 }
 
