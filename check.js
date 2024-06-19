@@ -58,7 +58,8 @@ function setError(u, msg){
 var span =  parentBox.querySelector("span");
 var fa = parentBox.querySelector(".fa");
 span.innerText=msg;
-    
+
+        
 fa.className="fa fa-exclamation-circle";
 }
 
