@@ -14,6 +14,7 @@ function checkData(){
     var TIMEValue = TIME.value.trim();
     var pass1Value = pass1.value.trim();
     var pass2Value = pass2.value.trim();
+     // var pass2Value = pass2.value.trim();
     
     if(usernameValue==""){
         setError(board_name,"Board/Club can't be blank");
